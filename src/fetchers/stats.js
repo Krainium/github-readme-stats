@@ -300,7 +300,7 @@ const fetchStats = async (
         100 || 0;
   }
   stats.totalReviews = user.reviews.totalPullRequestReviewContributions;
-  stats.totalIssues = user.openIssues.totalCount + user.closedIssues.totalCount;
+  stats.totalIssues = user.openIssues.totalCount;
   if (include_discussions) {
     stats.totalDiscussionsStarted = user.repositoryDiscussions.totalCount;
   }
